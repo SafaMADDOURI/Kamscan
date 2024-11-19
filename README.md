@@ -15,7 +15,9 @@ python3 perform_stat_test.py [options]
   Folder path where the statistical test results will be stored. (You don't have to create the folder)  
 
 - `-t, --top_tags`  
-  The number of top elements to be selected based on the best test statistics. Default: 200,000.  
+  The number of top elements to be selected based on the best test statistics. Default: 200,000.
+  If the value of `--top_tags` is between 0 and 1 (e.g., 0.9), it will select the corresponding percentage of the best results (e.g., 0.9 will select the top 90%).
+  If the value is greater than 1 (e.g., 100), it will select the exact number of top results (e.g., 100 will select the top 100 results).  
 
 - `-c, --chunk_size`  
   The size of each data chunk for parallel processing. Default: 10,000.  
@@ -43,10 +45,6 @@ python3 perform_stat_test.py -i kmer_count_matrix -o results_folder -t 10000 -c 
 - The script uses parallel processing with multiple CPUs to speed up the computation of statistical tests.
 - The number of top tags meeting the statistical criteria  will be selected and stored in a file in the output folder.
 - If `--cpm  normalization_file.txt` is provided, the script will perform Counts Per Million (CPM) normalization using this file, otherwise, the statistical test is performed without normalization.
-### `-t, --top_tags`:
-
-- If the value of `--top_tags` is between 0 and 1 (e.g., 0.9), it will select the corresponding percentage of the best results (e.g., 0.9 will select the top 90%).
-- If the value is greater than 1 (e.g., 100), it will select the exact number of top results (e.g., 100 will select the top 100 results).
 
 ## Dependecies:
 To run this script, you will need the following Python packages:
