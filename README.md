@@ -36,7 +36,7 @@ python3 perform_stat_test.py [options]
 
 ## Example Usage:
 ```
-$python3 perform_stat_test.py -i kmer_count_matrix -o results_folder -t 10000 -c 5000 -p 8 -d condition_folder -m normalization_file.txt --test_type ttest
+python3 perform_stat_test.py -i kmer_count_matrix -o results_folder -t 10000 -c 5000 -p 8 -d condition_folder -m normalization_file.txt --test_type ttest
 ```
 ## Note:
 - Make sure to provide the correct condition folder to store the design files. The script accepts various design files as input, each containing a table with the patient_id in the first column and their corresponding condition in the second column. For example, condition can be normal or tumoral.
