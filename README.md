@@ -7,9 +7,6 @@ This script performs various statistical tests on a k-mer count matrix using par
 ```
 $python3 perform_stat_test.py [options]
 ```
-
-
-## Arguments:
 ## Arguments:
 - `-i, --input`  
   Input file path containing the k-mer matrix  
@@ -36,8 +33,6 @@ $python3 perform_stat_test.py [options]
   Specify the type of statistical test to be performed.  
   Choices: ttest (t-test), pitest (pi-test), wilcoxon (Wilcoxon signed-rank test), variance  
   Default: ttest.  
-
-
 
 ## Example Usage:
 ```
