@@ -16,8 +16,8 @@ python3 perform_stat_test.py [options]
 
 - `-t, --top_tags`  
   The number of top elements to be selected based on the best test statistics. Default: 200,000.
-  If the value of `--top_tags` is between 0 and 1 (e.g., 0.9), it will select the corresponding percentage of the best results (e.g., 0.9 will select the top 90%).
-  If the value is greater than 1 (e.g., 100), it will select the exact number of top results (e.g., 100 will select the top 100 results).  
+  - If the value of `--top_tags` is between 0 and 1 (e.g., 0.9), it will select the corresponding percentage of the best results (e.g., 0.9 will select the top 90%).
+  - If the value is greater than 1 (e.g., 100), it will select the exact number of top results (e.g., 100 will select the top 100 results).  
 
 - `-c, --chunk_size`  
   The size of each data chunk for parallel processing. Default: 10,000.  
