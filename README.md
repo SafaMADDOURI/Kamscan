@@ -10,14 +10,33 @@ $python3 perform_stat_test.py [options]
 
 
 ## Arguments:
-`-i, --input`                : Input file path containing the k-mer matrix
-`-o, --output_folder`        : Folder path where the statistical test results will be stored. (You don't have to create the folder)
-`-t, --top_tags`             : The number of top elements to be selected based on the best test statistics. Default: 200,000.
-`-c, --chunk_size`           : The size of each data chunk for parallel processing. Default: 10,000.
-`-p, --processes`            : The number of CPUs used for parallel processing. Default: Number of available CPUs.
-`-d, --condition_folder`     : Folder path containing the design files that will be processed.
-`-m, --cpm`                  : Perform Counts Per Million (CPM) normalization using a file containing the total number of k-mers for each patient.
-`--test_type`                : Specify the type of statistical test to be performed. Choices: ttest (t-test), pitest (pi-test), wilcoxon (Wilcoxon signed-rank test), variance Default: ttest.
+## Arguments:
+- `-i, --input`  
+  Input file path containing the k-mer matrix  
+
+- `-o, --output_folder`  
+  Folder path where the statistical test results will be stored. (You don't have to create the folder)  
+
+- `-t, --top_tags`  
+  The number of top elements to be selected based on the best test statistics. Default: 200,000.  
+
+- `-c, --chunk_size`  
+  The size of each data chunk for parallel processing. Default: 10,000.  
+
+- `-p, --processes`  
+  The number of CPUs used for parallel processing. Default: Number of available CPUs.  
+
+- `-d, --condition_folder`  
+  Folder path containing the design files that will be processed.  
+
+- `-m, --cpm`  
+  Perform Counts Per Million (CPM) normalization using a file containing the total number of k-mers for each patient.  
+
+- `--test_type`  
+  Specify the type of statistical test to be performed.  
+  Choices: ttest (t-test), pitest (pi-test), wilcoxon (Wilcoxon signed-rank test), variance  
+  Default: ttest.  
+
 
 
 ## Example Usage:
