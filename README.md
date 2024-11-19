@@ -5,7 +5,7 @@ This script performs various statistical tests on a k-mer count matrix using par
 
 ## Usage:
 ```
-$python3 perform_stat_test.py [options]
+python3 perform_stat_test.py [options]
 ```
 ## Arguments:
 - `-i, --input`  
